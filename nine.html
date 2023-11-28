@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Nine</h1>
+      <br />
+      <img src="Images/nine.jpg" alt="Nine" class="albumcover" />
+      <br />
+      <br />
+      <p>
+        Nine est le huitième album studio de Blink-182 sorti le 20 septembre
+        2019.
+      </p>
+      <br />
+      <p>Il s'agira du dernier album avec Matt Skiba à la guitare.</p>
+      <br />
+      <h3>Liste des morceaux</h3>
+      <br />
+      <ul>
+        <li>01. The First Time</li>
+        <li>02. Happy Days</li>
+        <li>03. Heaven</li>
+        <li>04. Darkside</li>
+        <li>05. Blame It on My Youth</li>
+        <li>06. Generational Divide</li>
+        <li>07. Run Away</li>
+        <li>08. Black Rain</li>
+        <li>09. I Really Wish I Hated You</li>
+        <li>10. Pin the Grenade</li>
+        <li>11. No Heart to Speak Of</li>
+        <li>12. Ransom</li>
+        <li>13. On Some Emo Shit</li>
+        <li>14. Hungover You</li>
+        <li>15. Remember to Forget Me</li>
+        <br />
+        <li style="font-style: italic">** Titre Bonus Edition Japonaise **</li>
+        <br />
+        <li>16. Out of My Head</li>
+      </ul>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Discographie</h1>
+      <br />
+      <p>
+        La discographie de Blink-182 comprend l'ensemble des enregistrements de
+        Blink-182, groupe américain de pop punk formé en 1992. Cette
+        discographie contient une douzaine d'albums dont six albums studio, dont
+        ont été extraits une vingtaine de singles. L'album du groupe ayant eu le
+        meilleur succès commercial est Take Off Your Pants and Jacket, sorti en
+        2001, qui se hisse à la première place des classements aux États-Unis,
+        au Canada et en Allemagne, tandis que les chansons du groupe ayant reçu
+        le meilleur accueil sont What's My Age Again?, All the Small Things, The
+        Rock Show, Feeling This et I Miss You.
+      </p>
+      <br />
+      <h3 style="font-style: italic">Albums studio</h3>
+      <br />
+      <ul>
+        <a href="cheshireCat.html"
+          ><li>1994 : Cheshire Cat (Grilled Cheese)</li></a
+        >
+        <a href="dudeRanch.html"><li>1997 : Dude Ranch (MCA)</li></a>
+        <a href="enema.html"><li>1999 : Enema of the State (MCA)</li></a>
+        <a href="toypaj.html"
+          ><li>2001 : Take Off Your Pants and Jacket (MCA)</li></a
+        >
+        <a href="eponyme.html"><li>2003 : Blink-182 (Geffen)</li></a>
+        <a href="neighborhoods.html"
+          ><li>2011 : Neighborhoods (Interscope)</li></a
+        >
+        <a href="california.html"><li>2016 : California (BMG)</li></a>
+        <a href="nine.html"><li>2019 : Nine (Columbia Records)</li></a>
+        <a href="onemoretime.html"
+          ><li>2023 : One More Time... (Columbia)</li></a
+        >
+      </ul>
+      <br />
+      <h3 style="font-style: italic">Album live</h3>
+      <br />
+      <ul>
+        <li>
+          <a href="live.html"
+            >2000 : The Mark, Tom, and Travis Show (The Enema Strikes Back!)
+            (MCA)</a
+          >
+        </li>
+      </ul>
+      <br />
+      <h3 style="font-style: italic">Compilation</h3>
+      <br />
+      <ul>
+        <a href="hits.html"><li>2005 : Greatest Hits (Geffen Records)</li></a>
+      </ul>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

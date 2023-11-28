@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Greatest Hits</h1>
+      <br />
+      <img src="Images/GreatestHits.jpg" alt="Hits" class="albumcover" />
+      <br />
+      <br />
+      <p>
+        Greatest Hits est la première compilation musicale de Blink-182. Elle
+        est sortie le 1er novembre 2005, quelques mois après la séparation du
+        groupe. Le même jour est également sorti un DVD musical avec le même nom
+        et la même pochette. Le DVD inclus en plus la plupart des clips du
+        groupe.
+      </p>
+      <br />
+      <p>
+        Le titre Carousel n'était pas présent dans la liste originelle, mais
+        après de nombreuses plaintes des fans, soulignant qu'il s'agit d'un des
+        titres les plus connus du groupe, la chanson a été rajoutée.
+      </p>
+      <br />
+      <h3>Liste des morceaux</h3>
+      <br />
+      <ul>
+        <li>01. Carousel</li>
+        <li>02. M+M's</li>
+        <li>03. Dammit</li>
+        <li>04. Josie</li>
+        <li>05. What's My Age Again?</li>
+        <li>06. All the Small Things</li>
+        <li>07. Adam's Song</li>
+        <li>08. Man Overboard</li>
+        <li>09. The Rock Show</li>
+        <li>10. First Date</li>
+        <li>11. Stay Together for the Kids</li>
+        <li>12. Feeling This</li>
+        <li>13. I Miss You</li>
+        <li>14. Down</li>
+        <li>15. Always</li>
+        <li>16. Not Now</li>
+        <li>17. Another Girl Another Planet</li>
+        <br />
+        <li style="font-style: italic">** Version Internationale **</li>
+        <br />
+        <li>18. Aliens Exist (live à Los Angeles)</li>
+        <br />
+        <li style="font-style: italic">** Version Britannique **</li>
+        <br />
+        <li>18. I Won't Be Home For Christmas</li>
+        <li>19. Go (Session à BBC Radio 1)</li>
+        <br />
+        <li style="font-style: italic">** Version Japonaise **</li>
+        <br />
+        <li>18. I Won't Be Home For Christmas</li>
+        <li>19. Don't Tell Me It's Over</li>
+        <li>20. I Miss You (Live à Minneapolis)</li>
+      </ul>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

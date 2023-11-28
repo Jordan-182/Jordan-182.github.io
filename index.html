@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+    <header>
+      <div class="container">
+        <div class="photos">
+          <a href="tom.html"
+            ><img class="tom" src="Images/tom.png" alt="tom"
+          /></a>
+          <a href="travis.html"
+            ><img class="travis" src="Images/travis.png" alt="travis"
+          /></a>
+          <a href="mark.html"
+            ><img class="mark" src="Images/mark.png" alt="mark"
+          /></a>
+        </div>
+        <div class="album">
+          <img src="Images/one more time.png" alt="one more time" />
+        </div>
+        <h2>NOUVEL ALBUM DISPONIBLE</h2>
+        <button class="button">
+          <a href="https://blink182.lnk.to/ONEMORETIME" target="_blank"
+            >ECOUTER L'ALBUM</a
+          >
+        </button>
+      </div>
+    </header>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

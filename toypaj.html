@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Take off your pants and jacket</h1>
+      <br />
+      <img
+        src="Images/toypaj.jpg"
+        alt="Take off your pants and jacket"
+        class="albumcover"
+      />
+      <br />
+      <br />
+      <p>
+        Take Off Your Pants and Jacket est le quatrième album studio du groupe
+        californien Blink-182. Il est sorti le 12 juin 2001 sous le label MCA
+        Records.
+      </p>
+      <br />
+      <p>
+        Cet album a connu un important succès critique (AllMusic et Rolling
+        Stone lui ont mis une note de 4 sur 5) et commercial, l'album s'étant
+        vendu dans le monde à 4,5 millions d'exemplaires, devenant ainsi le
+        deuxième album le plus vendu du groupe après Enema of the State. Il a de
+        plus atteint la première place du classement américain Billboard 200.
+      </p>
+      <br />
+      <p>
+        Il en existe quatre versions avec des pochettes et des couleurs
+        différentes. A l'édition standard s'ajoutent trois autres versions
+        limitées. Chacune de ces éditions possède deux pistes de bonus
+        différentes. Ces bonus comportent pour chaque version un morceau du même
+        style que l'album ainsi qu'un morceau acoustique humoristique de courte
+        durée. Ces bonus étaient seulement présents sur les premières copies de
+        l'album.
+      </p>
+      <br />
+      <p>
+        Le titre de l'album est un calembour faisant référence à la masturbation
+        masculine (de l'anglais "take off your pants and jack it").
+      </p>
+      <br />
+      <h3>Liste des morceaux</h3>
+      <br />
+      <ul>
+        <li>01. Anthem Part Two</li>
+        <li>02. Online Songs</li>
+        <li>03. First Date</li>
+        <li>04. Happy Holidays, You Bastard</li>
+        <li>05. Story of a Lonely Guy</li>
+        <li>06. The Rock Show</li>
+        <li>07. Stay Together for the Kids</li>
+        <li>08. Roller Coaster</li>
+        <li>09. Reckless Abandon</li>
+        <li>10. Everytime I Look for You</li>
+        <li>11. Give Me One Good Reason</li>
+        <li>12. Shut Up</li>
+        <li>13. Please Take Me Home</li>
+        <br />
+        <li>** Morceaux bonus **</li>
+        <br />
+        <li style="font-style: italic">Edition Red Take Off</li>
+        <li>14. Time to Break Up</li>
+        <li>15. Mother's Day</li>
+        <br />
+        <li style="font-style: italic">Edition Yellow Pants</li>
+        <li>14. What Went Wrong</li>
+        <li>15. Fuck a Dog</li>
+        <br />
+        <li style="font-style: italic">Edition Green Jacket</li>
+        <li>14. Don't Tell Me It's Over</li>
+        <li>15. When You Fucked Grandpa</li>
+      </ul>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Blink-182</h1>
+      <br />
+      <img src="Images/eponyme.jpg" alt="Eponyme" class="albumcover" />
+      <br />
+      <br />
+      <p>
+        Blink-182 est le cinquième album studio du groupe californien de punk
+        rock Blink-182. Il est sorti en 2003 avant leur séparation en février
+        2005. Peu avant la sortie de l'album, Travis Barker, batteur du groupe
+        annonça que le titre de l'album serait Use Your Erection I and II (en
+        référence au double album Use Your Illusion I et Use Your Illusion II du
+        groupe Guns N' Roses). Plus tard, il admit qu'il s'agissait d'une
+        plaisanterie et le groupe décida finalement de laisser l'album sans nom.
+      </p>
+      <br />
+      <p>
+        Le style musical de l'album est beaucoup plus mûr que les albums
+        précédents. Le groupe utilise un son plus travaillé, plus clair et moins
+        distordu qui s'expliquent sans doute par les changements dans la vie des
+        membres du groupe (Mark Hoppus, Tom DeLonge et Travis Barker étant tous
+        trois devenus père avant la sortie de l'album), et par les projets
+        parallèles menés par les différents membres du groupe (Box Car Racer
+        pour Tom DeLonge et Travis Barker et The Transplants pour Travis
+        Barker). Les membres du groupe étant fan de The Cure, le chanteur du
+        groupe Robert Smith fut invité à prêter sa voix sur le titre All of
+        This, témoignant ainsi de cette nouvelle orientation musicale.
+      </p>
+      <br />
+      <p>
+        Dans ce désir de changement, il est important de remarquer que l'album
+        ne contient aucune chanson humoristique, ce qui était pourtant une des
+        caractéristiques principales des albums précédents et du groupe en
+        lui-même.
+      </p>
+      <br />
+      <h3>Liste des morceaux</h3>
+      <br />
+      <ul>
+        <li>01. Feeling This</li>
+        <li>02. Obvious</li>
+        <li>03. I Miss You</li>
+        <li>04. Violence</li>
+        <li>05. Stockholm Syndrome</li>
+        <li>06. Down</li>
+        <li>07. The Fallen Interlude</li>
+        <li>08. Go</li>
+        <li>09. Asthenia</li>
+        <li>10. Always</li>
+        <li>11. Easy Target</li>
+        <li>12. All of This (feat. Robert Smith de The Cure)</li>
+        <li>13. Here's Your Letter</li>
+        <li>14. I'm Lost Without You</li>
+      </ul>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

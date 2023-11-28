@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Membres</h1>
+      <br />
+      <br />
+      <h3 style="font-style: italic">Membres actuels</h3>
+      <br />
+      <ul>
+        <li>
+          <a href="mark.html">Mark Hoppus</a> (basse et chant) : de 1992 à
+          aujourd'hui
+        </li>
+        <li>
+          <a href="tom.html">Tom Delonge</a> (guitare et chant) : de 1992 à
+          2015, et depuis 2022
+        </li>
+        <li>
+          <a href="travis.html">Travis Barker</a> (batterie) : de 1998 à
+          aujourd'hui
+        </li>
+      </ul>
+      <br />
+      <br />
+      <h3 style="font-style: italic">Anciens membres</h3>
+      <br />
+      <ul>
+        <li>
+          <a href="scott.html">Scott Raynor</a> (batterie) : de 1992 à 1997
+        </li>
+        <li>
+          <a href="skiba.html">Matt Skiba</a> (guitare et chant) de 2015 à 2022
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

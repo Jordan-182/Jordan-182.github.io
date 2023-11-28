@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Scott Raynor</h1>
+      <br />
+      <p>
+        Scott Raynor (né le 23 mai 1978 à Poway, Californie, États-Unis) fut un
+        membre cofondateur du groupe californien de pop-punk Blink-182, jusqu'à
+        son remplacement par Travis Barker lors de la tournée qui suivait le
+        lancement de l'album Dude Ranch. Scott est également passionné pour les
+        batteurs de jazz.
+      </p>
+      <br />
+      <h3 style="font-style: italic">Ses débuts</h3>
+      <br />
+      <p>
+        Dans son adolescence, il était un véritable fan du groupe Metallica. Il
+        devint batteur lorsqu'il créa son premier groupe de musique avec
+        quelques amis seulement parce qu'ils l'appelaient le "good instruments"
+        ce qui signifie "celui qui a le rythme dans la peau". Tout d'abord
+        passionné par le heavy-metal, il s'orienta progressivement vers le punk,
+        ce qui l'amena rapidement à rejoindre Blink-182.
+      </p>
+      <br />
+      <h3 style="font-style: italic">Le groupe Blink-182 (1992 à 1997)</h3>
+      <br />
+      <p>
+        En 1992, Scott Raynor et Tom Delonge fondèrent le groupe Blink qui
+        devint plus tard Blink-182. En 1996, alors que la popularité du groupe
+        était croissante, les parents de Scott décidèrent de déménager pour Reno
+        dans le Nevada. Le groupe perdit alors son batteur qui fut remplacé un
+        temps par Mike Krull. Ne parvenant pas à continuer sans son batteur, le
+        groupe fit pression sur les parents de Scott afin que ce dernier vienne
+        emménager dans la famille de Mark. Le groupe fut donc à nouveau réuni
+        quelques mois plus tard et continua sa progression.
+      </p>
+      <br />
+      <h3 style="font-style: italic">La séparation (1997)</h3>
+      <br />
+      <p>
+        Malheureusement, durant une tournée de l'été 1997, alors que le groupe
+        s'embarque dans une grande tournée, Scott se fait de plus en plus absent
+        et c'est dans la surprise générale des fans que Scott est finalement
+        exclu du groupe entre deux concerts de la tournée.
+      </p>
+      <br />
+      <p style="font-style: italic">Source : Wikipedia</p>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Cheshire Cat</h1>
+      <br />
+      <img src="Images/cat.jpg" alt="CheshireCat" class="albumcover" /> <br />
+      <br />
+      <p>
+        Cheshire Cat est le 1er album studio de Blink-182. Il est sorti en 1995
+        sous le label Grilled Cheese Records. Il s'agit de leur tout premier
+        album commercial puisque les trois précédents sont comme des albums
+        démo. Le Chat du Cheshire est le nom du chat dans Alice au pays des
+        merveilles. Toutes les chansons sont écrites par Tom DeLonge et Mark
+        Hoppus, et les paroles additionnelles sur le titre Wasting Time ont été
+        écrites par Jeff Forrest.
+      </p>
+      <br />
+      <h3>Liste des morceaux</h3>
+      <br />
+      <ul>
+        <li>01. Carousel</li>
+        <li>02. M+M's</li>
+        <li>03. Fentoozler</li>
+        <li>04. Touchdown Boy</li>
+        <li>05. Strings</li>
+        <li>06. Peggy Sue</li>
+        <li>07. Sometimes</li>
+        <li>08. Does My Breath Smell?</li>
+        <li>09. Cacophony</li>
+        <li>10. TV</li>
+        <li>11. Toast and Bananas</li>
+        <li>12. Wasting Time</li>
+        <li>13. Romeo and Rebecca</li>
+        <li>14. Ben Wah Balls</li>
+        <li>15. Just About Done</li>
+        <li>16. Depends</li>
+      </ul>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

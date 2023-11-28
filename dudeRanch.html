@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Dude Ranch</h1>
+      <br />
+      <img src="Images/duderanch.jpg" alt="Dude Ranch" class="albumcover" />
+      <br />
+      <br />
+      <p>
+        Dude Ranch est le 2e album studio de Blink-182. Il est sorti en 1997
+        sous le label MCA Records. La plupart des chansons qui composent l'album
+        se réfèrent à des histoires vécues sans doute par les membres du groupe.
+        Cet album contient les singles Dammit et Josie qui ont participé à la
+        renommée du groupe et qui ont permis de vendre l'album à plus d'un
+        million d'exemplaires. Il s'agit du dernier album avec le batteur Scott
+        Raynor qui fut ensuite remplacé par Travis Barker.
+      </p>
+      <br />
+      <h3>Liste des morceaux</h3>
+      <br />
+      <ul>
+        <li>01. Pathetic</li>
+        <li>02. Voyeur</li>
+        <li>03. Dammit</li>
+        <li>04. Boring</li>
+        <li>05. Dick Lips</li>
+        <li>06. Waggy</li>
+        <li>07. Enthused</li>
+        <li>08. Untitled</li>
+        <li>09. Apple Shampoo</li>
+        <li>10. Emo</li>
+        <li>11. Josie</li>
+        <li>12. A New Hope</li>
+        <li>13. Degenerate</li>
+        <li>14. Lemmings</li>
+        <li>15. I'm Sorry</li>
+      </ul>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>Enema of the State</h1>
+      <br />
+      <img src="Images/enema.jpg" alt="Enema of the State" class="albumcover" />
+      <br />
+      <br />
+      <p>
+        Enema of the State est le troisième album studio de Blink-182, sorti le
+        1er juin 1999 sur le label MCA. Il sort deux ans après Dude Ranch, qui a
+        propulsé le trio californien sur le devant de la scène, et marque
+        l'arrivée du batteur Travis Barker en remplacement de Scott Raynor,
+        exclu du groupe en raison de son alcoolisme.
+      </p>
+      <br />
+      <p>
+        Les membres du groupe commencent à composer des chansons aux studios
+        DML, à Escondido (Californie) à partir d'octobre 1998, puis enregistrent
+        dans différents studios à San Diego, Hollywood, Los Angeles et Encinitas
+        avec le producteur Jerry Finn, jusqu'en février 1999. Les pistes sont
+        ensuite retravaillées par ce dernier pour leur donner un son plus pop,
+        avant d'être mixées aux studios South Beach et Conway Recording de
+        Miami, et mastérisées par Brian Gardner au Bernier Grundman Recording
+        d'Hollywood.
+      </p>
+      <br />
+      <p>
+        Accompagné des trois singles What's My Age Again?, All the Small Things
+        et Adam's Song, qui accèdent à plusieurs sommets de classements de
+        ventes, l'album bénéficie d'assez bonnes critiques et entre directement
+        à la 9e place du Billboard 200 avec plus de 110 000 exemplaires vendus
+        la première semaine. Il est désormais quintuple disque de platine aux
+        États-Unis avec plus de 5 millions de copies écoulées. Le succès est
+        également international puisqu'il obtient des certifications dans
+        différents pays du monde, comme l'Australie, la Nouvelle-Zélande,
+        l'Italie, le Royaume-Uni ou encore le Mexique, l'Indonésie et les
+        Philippines. La tournée The Mark, Tom and Travis Show Tour voit ainsi le
+        trio parcourir le monde jusqu'en novembre 2000 et permet la sortie un
+        album live associé : The Mark, Tom, and Travis Show (The Enema Strikes
+        Back!).
+      </p>
+      <br />
+      <p>
+        Souvent critiqué pour son manque de maturité et sa pochette affichant
+        l'actrice de films pornographiques Janine Lindemulder en infirmière,
+        l'opus propose des chansons rythmées évoquant majoritairement
+        l'adolescence et les filles dans un style pop punk qui a fait de
+        Blink-182 le groupe phare du mouvement. L'album apparaît depuis dans
+        plusieurs classements des disques les plus influents du rock
+        contemporain.
+      </p>
+      <br />
+      <h3>Liste des morceaux</h3>
+      <br />
+      <ul>
+        <li>01. Dumpweed</li>
+        <li>02. Don't Leave Me</li>
+        <li>03. Aliens Exist</li>
+        <li>04. Going Away to College</li>
+        <li>05. What's My Age Again?</li>
+        <li>06. Dysentery Gary</li>
+        <li>07. Adam's Song</li>
+        <li>08. All the Small Things</li>
+        <li>09. The Party Song</li>
+        <li>10. Mutt</li>
+        <li>11. Wendy Clear</li>
+        <li>12. Anthem</li>
+      </ul>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>

@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "poppins";
+  background-image: url(Images/arriere-plan-texture-lisse.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: relative;
+}
+
+.logo{
+  transition: transform 0.6s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.navbar {
+  position: fixed;
+  padding-top: 8px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  z-index: 9999;
+  font-size: 1.2em;
+  background-color: whitesmoke;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+}
+
+.navbar .navlinks ul {
+  display: flex;
+}
+
+.navbar .navlinks ul li {
+  margin: 0 20px;
+  transition: transform 0.6s ease-in-out;
+}
+
+.navbar .navlinks ul li:hover {
+  transform: scale(1.07);
+}
+
+.navbar .navlinks ul li.active a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.navbar .menu-hamburger {
+  width: 35px;
+  position: absolute;
+  display: none;
+  top: 50px;
+  right: 30px;
+}
+
+.container {
+  position: relative;
+  color:whitesmoke;
+  top: 150px;
+  width: 100vw;
+  text-align: center;
+}
+
+.photos {
+  display: inline-block;
+}
+
+.tom {
+  transition: transform 0.6s ease-in-out;
+}
+
+.tom:hover {
+  transform: scale(1.04);
+}
+
+.travis {
+  transition: transform 0.6s ease-in-out;
+}
+
+.travis:hover {
+  transform: scale(1.04);
+}
+
+.mark{
+  transition: transform 0.6s ease-in-out;
+}
+
+.mark:hover {
+  transform: scale(1.04);
+}
+
+.button:hover{
+background-color: black;
+}
+
+.button:hover a{
+  color: whitesmoke;
+}
+
+h1{
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+h3 {
+  color: #000;
+}
+
+p {
+  color: #000;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+li {
+  color: black;
+}
+
+li a{
+  color: black;
+}
+
+.button {
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.albumcover {
+border-radius: 5%;
+}
+
+.picture{
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 950px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 41px;
+    left: 30px;
+  }
+
+  .navbar .menu-hamburger {
+    display: block;
+  }
+
+  .navlinks {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur (8px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .navlinks.mobile-menu {
+    margin-left: 0;
+  }
+
+  .navlinks ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .navlinks ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blink-182 France</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="Images/Blink-182-Logo.png" alt="logo"
+      /></a>
+      <div class="navlinks">
+        <ul>
+          <li class="active"><a href="index.html">ACCUEIL</a></li>
+          <li>
+            <a href="histoire.html">HISTOIRE</a>
+          </li>
+          <li>
+            <a href="membres.html">MEMBRES</a>
+          </li>
+          <li>
+            <a href="albums.html">DISCOGRAPHIE</a>
+          </li>
+          <li>
+            <a href="https://uk.blink182merch.com/" target="_blank">BOUTIQUE</a>
+          </li>
+        </ul>
+      </div>
+      <img
+        src="Images/menu-btn.png"
+        alt="menu-hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
+
+    <div class="container">
+      <h1>California</h1>
+      <br />
+      <img src="Images/California.jpg" alt="California" class="albumcover" />
+      <br />
+      <br />
+      <p>
+        California est le septième album studio du groupe californien de punk
+        rock Blink-182 sorti le 1er juillet 2016 sur le label BMG Rights
+        Management. Il est le premier enregistrement avec Matt Skiba, depuis le
+        départ de Tom DeLonge.
+      </p>
+      <br />
+      <p>
+        California devient un double album à la sortie de son édition Deluxe,
+        qui ajoute pas moins de 12 nouveaux morceaux
+      </p>
+      <br />
+      <p>
+        L'album se vend à plus de 186 000 exemplaires aux États-Unis sur sa
+        première semaine et prend ainsi la première place du Billboard 200,
+        délogeant Drake et Views qui y étaient depuis neuf semaines. Pour la
+        première fois, ils se retrouvent également en tête des ventes au
+        Royaume-Uni, devant 25 d'Adele.
+      </p>
+      <br />
+      <h3>Liste des morceaux</h3>
+      <br />
+      <ul>
+        <li>01. Cynical</li>
+        <li>02. Bored to Death</li>
+        <li>03. She's Out of Her Mind</li>
+        <li>04. Los Angeles</li>
+        <li>05. Sober</li>
+        <li>06. Built This Pool</li>
+        <li>07. No Future</li>
+        <li>08. Home Is Such a Lonely Place</li>
+        <li>09. Kings of the Weekend</li>
+        <li>10. Teenage Satellites</li>
+        <li>11. Left Alone</li>
+        <li>12. Rabbit Hole</li>
+        <li>13. San Diego</li>
+        <li>14. The Only Thing That Matters</li>
+        <li>15. California</li>
+        <li>16. Brohemian Rhapsody</li>
+      </ul>
+      <br />
+      <h2>California Edition Deluxe</h2>
+      <br />
+      <img
+        src="Images/Californiadeluxe.jpg"
+        alt="californiadeluxe"
+        class="albumcover"
+      />
+      <br />
+      <h3>Liste des morceaux</h3>
+      <br />
+      <ul>
+        <li>01. Parking Lot</li>
+        <li>02. Misery</li>
+        <li>03. Good Old Days</li>
+        <li>04. Don't Mean Anything</li>
+        <li>05. Hey I'm Sorry</li>
+        <li>06. Last Train Home</li>
+        <li>07. Wildfire</li>
+        <li>08. 6/8</li>
+        <li>09. Long Lost Feeling</li>
+        <li>10. Bottom Of The Ocean</li>
+        <li>11. Can't Get You More Pregnant</li>
+        <li>12. Bored To Death (Acoustic)</li>
+      </ul>
+      <br />
+    </div>
+  </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".navlinks");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
+</html>
